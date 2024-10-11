@@ -1,6 +1,6 @@
 # Stock Portfolio Optimization Using Machine Learning
 
-<!-- <img src="https://github.com/Huntsworth7/LendingClubClassification/blob/master/images/lending_club_logo.JPG"> -->
+<img src="https://github.com/mekz-data/portfolio_optimization/blob/main/images/finance.png" height="300"> 
 
 This project explores the use of machine learning techniques to develop an optimal stock portfolio. It was part of my Master's in Analytics at Georgia Tech. Due to academic integrity policies, detailed reports and code are not publicly shared. Below is a brief overview of the project's accomplishments.
 
@@ -13,7 +13,7 @@ This project explores the use of machine learning techniques to develop an optim
 ## Code and Resources Used
 **Python Version:** 3.4        
 **Packages used:** pypfopt, seaborn, yfinance, plotly, pandas, numpy, matplotlib, scikit-learn        
-**Paper:** <!-- put paper here -->
+**Paper:** [Inspiration for Project](https://github.com/mekz-data/portfolio_optimization/blob/main/Reference%20Paper.pdf)
 
 ## Explanation of Key Features
 - **marketCap:** Total market value of a company's outstanding shares, calculated by multiplying the current share price by the total number of outstanding shares.
@@ -35,23 +35,23 @@ This project explores the use of machine learning techniques to develop an optim
   - One stock had a 209% increase over the year.
   - Mean is much higher than the median for every statistic, indicating large outliers skewing the data.
 
-- Principal Component Analysis indicated that 6 principal components account for 60% of the variance.
+- Principal Component Analysis indicated that 6 principal components account for 60% of the variance.       
 
-<!--put PCA image here -->
-
+<img src="https://github.com/mekz-data/portfolio_optimization/blob/main/images/PCA.png"> 
+        
 ## Building the Optimal Portfolio
 - Converted the target variable, 52 Week Change, to a binary variable indicating if the stock was positive or negative for the year.
 - Employed Lasso and Ridge Regression along with Random Forest for feature selection, with LASSO significantly outperforming Ridge.
 
-<!-- put accuracy graph here -->
+<img src="https://github.com/mekz-data/portfolio_optimization/blob/main/images/accuracy.png" height="300">
 
 - Used KMeans clustering to identify the best stocks based on the calculated Sharpe Ratio.
 
-<!-- Put Sharpe Ratio Formula here -->
+<img src="https://github.com/mekz-data/portfolio_optimization/blob/main/images/sharpe_ratio.webp" height="200">
 
-- The Sharpe Ratio is typically evaluated as: > 1 = acceptable, > 2 = very good, > 3 = excellent, though this depends on current market conditions.
-
-<!-- sharpe ratio fluct -->
+- The Sharpe Ratio is typically evaluated as: > 1 = acceptable, > 2 = very good, > 3 = excellent, though this depends on current market conditions.       
+       
+<img src = "https://github.com/mekz-data/portfolio_optimization/blob/main/images/Sharpe_fluct.png" height="350">
 
 - That being the case, the S&P 500's Sharpe Ratio serves as the benchmark.
 - Only portfolios with more than 5 and fewer than 100 stocks were considered practical.
